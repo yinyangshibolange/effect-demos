@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/effect-demos/out/",
     "preview": "vite preview"
   },
   "dependencies": {
