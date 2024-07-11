@@ -7,9 +7,9 @@
       <div class="btn" :id="`btn_mode_absolute`" @click="mode = 'absolute'" :class="{ active: mode === 'absolute' }">
         照片墙（absolute版）
       </div>
-      <div class="btn" :id="`btn_mode_filter`" @click="mode = 'filter'" :class="{ active: mode === 'filter' }">
+      <!-- <div class="btn" :id="`btn_mode_filter`" @click="mode = 'filter'" :class="{ active: mode === 'filter' }">
         照片墙（点不到版）
-      </div>
+      </div> -->
       <div class="btn" :id="`btn_mode_relative-anime`" @click="mode = 'relative-anime'"
         :class="{ active: mode === 'relative-anime' }">
         照片墙（relative-anime版）
@@ -18,9 +18,9 @@
         :class="{ active: mode === 'absolute-anime' }">
         照片墙（absolute-anime版）
       </div>
-      <div class="btn" :id="`btn_mode_button`" @click="mode = 'button'" :class="{ active: mode === 'button' }">
+      <!-- <div class="btn" :id="`btn_mode_button`" @click="mode = 'button'" :class="{ active: mode === 'button' }">
         按钮特效展示
-      </div>
+      </div> -->
       <div id="nav_mask" :style="{
         left: mask.left + 'px',
         width: mask.width + 'px',
@@ -248,7 +248,7 @@ onMounted(() => {
   box-sizing: border-box;
 }
 
-.content.absolute {
+.content.absolute, .content.absolute-anime {
   height: calc(100% - 50px);
   overflow: hidden;
 }
